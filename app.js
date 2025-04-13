@@ -6,7 +6,7 @@ const app = express();
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-  redirectUri: 'http://127.0.0.1:3000/callback'
+  redirectUri:"https://spotify-api-i5x7.onrender.com/callback"|| 'http://127.0.0.1:3000/callback'
 });
 
 // Login endpoint to start authorization
